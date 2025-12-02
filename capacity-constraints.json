@@ -1,0 +1,605 @@
+{
+  "success": true,
+  "availability": {
+    "2025-12-02": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 100,
+        "maxCapacity": 100,
+        "message": "Available"
+      }
+    ],
+    "2025-12-03": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 2000,
+        "maxCapacity": 2000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-04": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 1500,
+        "maxCapacity": 1500,
+        "message": "Available"
+      }
+    ],
+    "2025-12-05": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 20,
+        "available": false,
+        "remaining": 2000,
+        "maxCapacity": 2000,
+        "message": "Not Available - Day already booked"
+      }
+    ],
+    "2025-12-06": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 2000,
+        "maxCapacity": 2000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-07": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 2000,
+        "maxCapacity": 2000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-08": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 1000,
+        "maxCapacity": 1000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-09": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 100,
+        "maxCapacity": 100,
+        "message": "Available"
+      }
+    ],
+    "2025-12-10": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 1000,
+        "maxCapacity": 1000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-11": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 500,
+        "maxCapacity": 500,
+        "message": "Available"
+      }
+    ],
+    "2025-12-12": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 1000,
+        "maxCapacity": 1000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-13": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-14": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-15": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 100,
+        "available": false,
+        "remaining": 1000,
+        "maxCapacity": 1000,
+        "message": "Not Available - Day already booked"
+      }
+    ],
+    "2025-12-16": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 100,
+        "maxCapacity": 100,
+        "message": "Available"
+      }
+    ],
+    "2025-12-17": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 1000,
+        "maxCapacity": 1000,
+        "message": "Available"
+      }
+    ],
+    "2025-12-18": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": true,
+        "remaining": 500,
+        "maxCapacity": 500,
+        "message": "Available"
+      }
+    ],
+    "2025-12-19": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-20": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-21": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-22": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-23": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (100 remaining out of 100)"
+      }
+    ],
+    "2025-12-24": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-25": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-26": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-27": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-28": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-29": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2025-12-30": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (100 remaining out of 100)"
+      }
+    ],
+    "2025-12-31": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-01": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-02": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-03": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-04": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-05": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-06": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (100 remaining out of 100)"
+      }
+    ],
+    "2026-01-07": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-08": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-09": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-10": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-11": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-12": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-13": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (100 remaining out of 100)"
+      }
+    ],
+    "2026-01-14": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-15": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-16": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-17": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-18": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-19": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-20": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (100 remaining out of 100)"
+      }
+    ],
+    "2026-01-21": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-22": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-23": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-24": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-25": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-26": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-27": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (100 remaining out of 100)"
+      }
+    ],
+    "2026-01-28": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-29": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ],
+    "2026-01-30": [
+      {
+        "requestedQty": 10,
+        "currentlyBooked": 0,
+        "available": false,
+        "remaining": null,
+        "maxCapacity": null,
+        "message": "Exceeds capacity (0 remaining out of 0)"
+      }
+    ]
+  }
+}

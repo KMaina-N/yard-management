@@ -1,0 +1,52 @@
+That file contains specifications and requirements for a **Yard Booking Software** system. Here is the extracted information, organized by the different components described:
+
+---
+
+## 💻 Landing Page User Input (Mostly)
+Users need to provide the following information on the landing page for a delivery booking:
+
+* [cite_start]**Supplier Name**: Must be a string selected from a dropdown, referencing the **Supplier NAVISION OB**[cite: 2].
+* [cite_start]**Number of Items/Lines for Delivery**: An **integer**[cite: 3].
+* [cite_start]**Quantities**[cite: 4].
+* [cite_start]**Number of Pallets/Packets**: An **integer**[cite: 5].
+* **Type of Goods**: Selected from a dropdown menu. [cite_start]Acceptable types include **Oil, Batteries, Body Parts, Chemical, Car Parts, and Tyres**[cite: 7, 8].
+* [cite_start]**Document Upload**: Users should be able to upload documents like a **packing list** or **invoice**[cite: 9].
+
+---
+
+## 🚫 Rules
+[cite_start]The system must enforce specific rules, which should be manageable through an **Admin Panel**[cite: 15]:
+
+* **Truck Limit by Goods Type**:
+    * [cite_start]**Oil, Batteries, Body Parts, Chemical, Tyres**: Only **two trucks per day** are allowed for these types, *except* **Car Parts**, which is **not included** in this limit[cite: 12].
+    * [cite_start]**Tyres**: Limited to **one truck per day**[cite: 12].
+* [cite_start]**Item/Line Limit**: A maximum of **500 items/lines per day** is allowed, **no matter the type of goods**[cite: 14].
+
+---
+
+## ⚙️ Admin Panel
+The administrative interface should include the following features:
+
+* [cite_start]**Calendar Overview of Goods Arrival**[cite: 17].
+    * [cite_start]**Details** for the day/week, including the **number of pallets/items, quantities, and suppliers**[cite: 18].
+* [cite_start]**Steering Screen for Rules Definition**[cite: 19].
+* [cite_start]**Suppliers** management[cite: 20].
+* [cite_start]**Exceptions**: A feature to manage exceptions (e.g., POS 15) which should be viewable (positive/negative) **no matter the time of day**[cite: 22, 23].
+* [cite_start]**Closed Warehouse** status[cite: 24].
+* [cite_start]**Thoughts/Considerations**: User creation process, privacy, and security[cite: 25].
+
+---
+
+## ✅ Final Step (Booking Confirmation)
+After entering the shipment details, the user will interact with a calendar screen to finalize the booking:
+
+1.  [cite_start]**Shipment Details**: The user is shown **all of the shipment details** they provided[cite: 32].
+2.  [cite_start]**Calendar**: The user will see a **clickable calendar** where only days where the **day limit is not reached** are available[cite: 36, 37].
+3.  [cite_start]**Timeslot Selection**: After choosing the day/date of arrival, the user must select a **Time (Hour/Minute)**[cite: 38].
+    * [cite_start]**Timeslots** are important and must be **30 minutes** long[cite: 40].
+4.  [cite_start]**Confirmation**: After selecting the day/date, the user will receive a **confirmation email**[cite: 42].
+    * [cite_start]This confirmation email **needs to be shown** at the warehouse and is associated with a **QR code**[cite: 43, 44].
+
+---
+
+Would you like me to elaborate on a specific section, such as the rules or the Admin Panel features?

@@ -1,0 +1,145 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(uuid())
+  email     String    @unique
+  name      String?
+  password  String
+  role      String    @default("USER")
+  company   String?
+  lastLogin DateTime?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  accountActive Boolean   @default(false)
+  bookings  Booking[]
+}
+
+model Booking {
+  id          String      @id @default(uuid())
+  user        User        @relation(fields: [userId], references: [id])
+  userId      String
+  yard        Yard?       @relation(fields: [yardId], references: [id])
+  yardId      String?
+  bookingDate DateTime @db.Date
+  status      String      @default("pending")
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  goods       Goods[]     // One booking can have many goods
+  attachments Attachment[] // One booking can have many attachments
+}
+
+model Goods {
+  id             String      @id @default(uuid())
+  booking        Booking     @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  bookingId      String
+  type           ProductType @relation(fields: [typeId], references: [id], onDelete: NoAction)
+  typeId         String
+  quantities     Int
+  productLines Int
+  numberOfPallets Int?
+  createdAt      DateTime    @default(now())
+  updatedAt      DateTime    @updatedAt
+}
+
+model Attachment {
+  id         String   @id @default(uuid())
+  booking    Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  bookingId  String
+  filePath   String?
+  fileType   String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+model ProductType {
+  id            String      @id @default(uuid())
+  name          String      @unique
+  description   String?
+  dailyCapacity Int
+  tolerance     Float
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  goods         Goods[]     // One product type can be used in many goods
+  yardId        String?
+  yards         Yard?       @relation(fields: [yardId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([yardId])
+}
+
+model Yard {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  address   String   @default("")
+  capacity  Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  bookings     Booking[]
+  productTypes ProductType[]
+}
+
+model DeliverySchedule {
+  id            String             @id @default(uuid())
+  week          String             // ISO Week identifier (e.g., "2025-48")
+  totalCapacity Int
+  tolerance     Float?
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+
+  // Relation to multiple days
+  days          DeliveryRuleDay[]
+
+  @@unique([week]) // optional: ensure one schedule per week
+}
+
+model DeliveryRuleDay {
+  id                 String           @id @default(uuid())
+  date               DateTime
+  capacity           Int
+  isSaved            Boolean          @default(false)
+  deliveryScheduleId String
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+
+  // Relation back to schedule
+  deliverySchedule   DeliverySchedule @relation(fields: [deliveryScheduleId], references: [id])
+
+  @@unique([date, deliveryScheduleId]) // ensure no duplicate days within the same schedule
+}
+
+
+model SupplierRule {
+  id                String   @id @default(uuid())
+  supplierName      String
+  day               String
+  allocatedCapacity Int
+  freedCapacity    Int       @default(0)
+  deliveryEmail    String @default("")
+  tolerance         Int       @default(0)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+}
+
+
+model Report {
+  id         String   @id @default(uuid())
+  fileName   String
+  filePath   String
+  fileType   String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}

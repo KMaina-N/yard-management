@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Activated</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            padding: 48px 16px;
+            line-height: 1.5;
+            color: #000;
+        }
+
+        .wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+            padding: 48px 48px 40px;
+            border-bottom: 1px solid #e8eaed;
+            text-align: center;
+        }
+
+        .label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: #4caf50;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .status-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: #4caf50;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 500;
+            color: #000;
+            margin: 0;
+        }
+
+        .content {
+            padding: 40px 48px;
+        }
+
+        .message {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            justify-content: center;
+        }
+
+        .button {
+            flex: 1;
+            padding: 14px 24px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.2, 0, 0.8, 1);
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .button-primary {
+            background: #000000;
+            color: #fff;
+            margin-top: 10%;
+        }
+
+        .button-primary:hover {
+            background: #292929;
+        }
+
+        .footer {
+            padding: 32px 48px;
+            font-size: 12px;
+            color: #999;
+            line-height: 1.6;
+            border-top: 1px solid #f0f0f0;
+            background: #fafafa;
+            text-align: center;
+        }
+
+        .footer-text {
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                padding: 40px 32px 32px;
+            }
+
+            .content {
+                padding: 32px 32px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="label">
+                    <span class="status-icon">✓</span>
+                    Account Activated
+                </div>
+                <h1>Welcome to Tokić Yard Management System</h1>
+            </div>
+
+            <div class="content">
+                <p class="message">
+                    Your account has been verified and activated. You can now log in and create delivery bookings to our
+                    warehouse.
+                </p>
+
+
+                <div class="actions">
+                    <button class="button button-primary">Login to Account</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-text">
+                    For assistance or questions, please contact Tokic support.
+                </div>
+                <div class="footer-text">
+                    <a href="{{supportLink}}" style="color: #4caf50; text-decoration: none; font-weight: 600;">Contact
+                        Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
