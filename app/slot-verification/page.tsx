@@ -14,32 +14,39 @@ interface ApiResponse {
 }
 
 export default function SlotConfirmation() {
-  const [status, setStatus] = useState<Status>("loading");
+    const [status, setStatus] = useState<Status>("loading");
   const [slotId, setSlotId] = useState<string | null>(null);
   const [actionType, setActionType] = useState<ActionType>(null);
   const [message, setMessage] = useState<string>("");
 
   useEffect(() => {
+    if (typeof window === "undefined") return; // ensure browser-only
+
     const runAsync = async () => {
       try {
         const params = new URLSearchParams(window.location.search);
         const paramsId = params.get("id");
-        const action = params.get("action") as ActionType;
+        const action = (params.get("action") as ActionType) || null;
 
-        const decoded = await decodeId(paramsId || "");
+        if (!paramsId) {
+          setStatus("error");
+          setMessage("Missing slot ID");
+          return;
+        }
 
+        const decoded = await decodeId(paramsId);
         if (!decoded) {
           setStatus("error");
-          setMessage("Invalid request. Missing slot ID.");
+          setMessage("Invalid slot ID");
           return;
         }
 
         setSlotId(decoded);
         setActionType(action);
         submitConfirmation(decoded, action);
-      } catch {
+      } catch (err) {
         setStatus("error");
-        setMessage("Invalid request. Missing slot ID.");
+        setMessage("Invalid request or missing slot ID");
       }
     };
 
