@@ -10,7 +10,7 @@ const PUBLIC_PATHS = [
   "/login",
   "/register",
   "/api/auth/register", // <--- allow registration without auth
-  "/api/cron/suppliers", // <--- allow cron job without auth
+  "/api/cron/supplier", // <--- allow cron job without auth
 ];
 
 export async function middleware(req: NextRequest) {
